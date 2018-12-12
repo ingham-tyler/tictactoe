@@ -1,0 +1,34 @@
+{
+  "author": "Tyler Ingham",
+  "bugs": {
+    "url": "https://github.com/ingham-tyler/tictactoe/issues"
+  },
+  "description": "Simple Javascript TicTacToe game",
+  "homepage": "https://github.com/ingham-tyler/tictactoe#readme",
+  "keywords": [
+    "tic",
+    "tac",
+    "toe",
+    "game"
+  ],
+  "license": "GPL-3.0-or-later",
+  "main": "index.js",
+  "name": "tictactoe",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingham-tyler/tictactoe.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "nodemon": "^1.18.8"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
