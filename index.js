@@ -1,14 +1,15 @@
 const express = require('express')
+const path = require('path')
 
 const app = express()
-
+app.use(express.static(path.join(__dirname, '/public')))
 app.use((req, res, next) => {
     console.log(`Request URL: ${req.url}`)
     next()
 })
 
 app.get('/', (req, res) => {
-    res.send('<h1>This is the game!</h1>')
+    res.sendFile(path.join(__dirname, '/public', 'index.html'))
 })
 
 const PORT = process.env.PORT || 5000
