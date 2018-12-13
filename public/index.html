@@ -14,43 +14,56 @@
             Please enable JavaScript to be able to play
         </noscript>
 
-        <header>
-            <nav class="navbar navbar-expand-md mavbar-dark bg-dark static-top">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Rules</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <main role="main" class="game-wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h1>The Game</h1>
-                    </div>
+        <main role="main" class="container">
+            <div class="game-wrapper">
+                <h1>Tic Tac Toe</h1>
+                <p class="game-info">Current player: <span class="player"></span></p>
+                <div class="winner hidden">
+                    <h3>Winner: <span class="winning-player"></span></h3>
+                    <p>Click <a href='/'>here</a> to play again</p>
                 </div>
                 <div class="board">
                     <div class="row">
-                        <div class="col tile text-center">1</div>
-                        <div class="col tile text-center">2</div>
-                        <div class="col tile text-center">3</div>
-                        <div class="w-100"></div>
-                        <div class="col tile text-center">4</div>
-                        <div class="col tile text-center">5</div>
-                        <div class="col tile text-center">6</div>
-                        <div class="w-100"></div>
-                        <div class="col tile text-center">7</div>
-                        <div class="col tile text-center">8</div>
-                        <div class="col tile text-center">9</div>
+                        <div class="col tile" id="t-0" onclick="placePiece('t-0')">
+                            <img class="piece hidden" id="x-0" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-0" src="./images/o-piece.png" alt="O">
+                        </div>
+                        <div class="col tile" id="t-1" onclick="placePiece('t-1')">
+                            <img class="piece hidden" id="x-1" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-1" src="./images/o-piece.png" alt="O">
+                        </div>
+                        <div class="col tile" id="t-2" onclick="placePiece('t-2')">
+                            <img class="piece hidden" id="x-2" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-2" src="./images/o-piece.png" alt="O">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col tile" id="t-3" onclick="placePiece('t-3')">
+                            <img class="piece hidden" id="x-3" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-3" src="./images/o-piece.png" alt="O">
+                        </div>
+                        <div class="col tile" id="t-4" onclick="placePiece('t-4')">
+                            <img class="piece hidden" id="x-4" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-4" src="./images/o-piece.png" alt="O">
+                        </div>
+                        <div class="col tile" id="t-5" onclick="placePiece('t-5')">
+                            <img class="piece hidden" id="x-5" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-5" src="./images/o-piece.png" alt="O">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col tile" id="t-6" onclick="placePiece('t-6')">
+                            <img class="piece hidden" id="x-6" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-6" src="./images/o-piece.png" alt="O">
+                        </div>
+                        <div class="col tile" id="t-7" onclick="placePiece('t-7')">
+                            <img class="piece hidden" id="x-7" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-7" src="./images/o-piece.png" alt="O">
+                        </div>
+                        <div class="col tile" id="t-8" onclick="placePiece('t-8')">
+                            <img class="piece hidden" id="x-8" src="./images/x-piece.png" alt="X">
+                            <img class="piece hidden" id="o-8" src="./images/o-piece.png" alt="O">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,6 +74,7 @@
             </div>
         </footer>
 
+        <script src="./game.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
