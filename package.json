@@ -3,7 +3,18 @@
   "bugs": {
     "url": "https://github.com/ingham-tyler/tictactoe/issues"
   },
-  "description": "Simple Javascript TicTacToe game",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "description": "A Simple Javascript TicTacToe Game",
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "nodemon": "^1.18.8"
+  },
+  "engines": {
+      "node": "8.11.3",
+      "npm": "6.4.1"
+  },
   "homepage": "https://github.com/ingham-tyler/tictactoe#readme",
   "keywords": [
     "tic",
@@ -20,15 +31,8 @@
     "url": "git+https://github.com/ingham-tyler/tictactoe.git"
   },
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js"
   },
-  "version": "1.0.0",
-  "devDependencies": {
-    "eslint": "^5.10.0",
-    "nodemon": "^1.18.8"
-  },
-  "dependencies": {
-    "express": "^4.16.4"
-  }
+  "version": "1.1.0"
 }
