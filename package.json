@@ -34,5 +34,5 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
-  "version": "1.1.0"
+  "version": "1.1.1"
 }
