@@ -1,6 +1,16 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
 .game-wrapper {
-    height: 100vh;
+    height: 100%;
     padding-top: 2em;
+    margin-bottom: 15px;
 }
 
 .board {
@@ -30,8 +40,11 @@
 }
 
 .footer {
+    bottom: 0;
     height: 60px;
     line-height: 60px;
+    position: absolute;
+    width: 100%;
 }
 
 .end-game {
