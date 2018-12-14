@@ -15,12 +15,61 @@
         </noscript>
 
         <main role="main" class="container">
-            <div class="game-wrapper">
+            <div class="section menu">
+                <div class="row text-center">
+                    <div class="col">
+                        <div class="menu-list">
+                            <h1 class="text-secondary menu-heading">Tyler's TicTacToe</h1>
+                            <button class="btn btn-lg btn-success menu-button" role="button" onclick="showGame()">Play</button>
+                            <button class="btn btn-lg btn-secondary menu-button" role="button" onclick="showRules()">Rules</button>
+                            <button class="btn btn-lg btn-secondary menu-button" role="button" onclick="showAbout()">About</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section rules hidden">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1>Rules</h1>
+                        <p>Standard tic-tac-toe game rules. Play to get three in a row vertically, horizontally, or diagonally.</p>
+                        <p>You cannont place your piece where a piece already is and you cannot redo a move.</p>
+                        <button class="btn btn-lg btn-info" role="button" onclick="showMenu()">Back to Menu</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section about hidden">
+                <div class="row text-center">
+                    <div class="col">
+                        <h1>About This Game</h1>
+                        <p>This game was created on the Node.js platform using Express.js to run the server. The game is coded using plain old Javascript and the front end was designed using Bootstrap 4. This web app was developed and is maintained by Tyler Ingham, and is hosted using Heroku. Please feel free to check out the links below to see the technology used. Thank you and have a great time playing classic Tic Tac Toe!</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Find out more about <a href="https://nodejs.org/en/">Node.js</a> here.
+                            </li>
+                            <li class="list-group-item">
+                                Find out more about <a href="https://expressjs.com/">Express.js</a> here.
+                            </li>
+                            <li class="list-group-item">
+                                Find out more about <a href="https://getbootstrap.com/">Bootstrap</a> here.
+                            </li>
+                            <li class="list-group-item">
+                                Find out more about <a href="https://www.heroku.com/">Heroku</a> here.
+                            </li>
+                            <li class="list-group-item">
+                                Check out Tyler's <a href="https://github.com/ingham-tyler">GitHub</a> here.
+                            </li>
+                        </ul>
+                        <button class="btn btn-lg btn-info" role="button" onclick="showMenu()">Back to Menu</button>
+                    </div>
+                </div>
+            </div>
+            <div class="game-wrapper hidden">
                 <h1>Tic Tac Toe</h1>
                 <p class="game-info">Current player: <span class="player"></span></p>
                 <div class="winner text-center hidden">
                     <h4>Winner: <span class="winning-player"></span></h4>
-                    <button class="btn btn-secondary" onclick="replay()">Play Again</button>
+                    <button class="btn btn-secondary" role="button" onclick="replay()">Play Again</button>
+                    <button class="btn btn-info" role="button" onclick="showMenu()">Return to Menu</button>
                 </div>
                 <div class="board">
                     <div class="row">

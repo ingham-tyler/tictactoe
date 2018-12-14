@@ -184,5 +184,32 @@ function replay() {
     getCurrentPlayer()
 }
 
-start()
-getCurrentPlayer()
+function showGame() {
+    document.querySelector('.menu').classList.add('hidden')
+    document.querySelector('.game-wrapper').classList.remove('hidden')
+    document.querySelector('.rules').classList.add('hidden')
+    document.querySelector('.about').classList.add('hidden')
+
+    replay()
+}
+
+function showMenu() {
+    document.querySelector('.menu').classList.remove('hidden')
+    document.querySelector('.game-wrapper').classList.add('hidden')
+    document.querySelector('.rules').classList.add('hidden')
+    document.querySelector('.about').classList.add('hidden')
+}
+
+function showRules() {
+    document.querySelector('.menu').classList.add('hidden')
+    document.querySelector('.game-wrapper').classList.add('hidden')
+    document.querySelector('.rules').classList.remove('hidden')
+    document.querySelector('.about').classList.add('hidden')
+}
+
+function showAbout() {
+    document.querySelector('.menu').classList.add('hidden')
+    document.querySelector('.game-wrapper').classList.add('hidden')
+    document.querySelector('.rules').classList.add('hidden')
+    document.querySelector('.about').classList.remove('hidden')
+}

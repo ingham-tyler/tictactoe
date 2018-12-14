@@ -7,6 +7,45 @@ body {
     margin-bottom: 60px;
 }
 
+.section {
+    margin-top: 2em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.menu-list {
+    background-color: #1f1f1f;
+    border: 2px solid black;
+    border-radius: 25% 10%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10% 0;
+    width: 50%;
+}
+
+.menu-heading {
+    margin-bottom: 1em;
+}
+
+.menu-button {
+    display: block;
+    margin: 5px 5%;
+    width: 90%;
+}
+
+.list-group {
+    margin: 10px 0;
+}
+
 .game-wrapper {
     height: 100%;
     padding-top: 2em;
@@ -58,5 +97,9 @@ body {
 
     .tile {
         height: 5em;
+    }
+
+    .menu-heading {
+        display: none;
     }
 }
