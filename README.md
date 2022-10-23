@@ -1,3 +1,9 @@
 # Tyler's TicTacToe Game
 
-Go play the game [here](https://tylers-tictactoe.herokuapp.com)
+#### TODO: Summary
+
+---
+
+Designed and Developed by Tyler Ingham
+
+Copyright 2022 Tyler Ingham <tdingham31@gmail.com>
